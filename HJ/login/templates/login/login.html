@@ -1,0 +1,26 @@
+<!DOCTYPE HTML5>
+<head>
+	<title>禾嘉订单查询</title>
+	<meta charset="utf-8"/>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'login/css/login.css' %}"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		{% if message %}
+			<div class="message">{{ message }}</div>
+		{% endif %}
+		<form class="form" action="/login/" method="post">
+			{% csrf_token %}
+			<p>登录</p>
+			<input class="user_name" type="text" placeholder="请输入用户名" name="user_name" autofocus required />
+			<!-- placeholder 占位符 autofocus 自动聚焦 required 必须输入 -->
+			<input class="user_password" type="password" placeholder="请输入密码" name="user_password" required />
+			<input class="submit" type="submit" value="登录"/>
+		</form>
+	</div>
+</body>

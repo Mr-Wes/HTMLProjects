@@ -1,0 +1,56 @@
+body {
+	background: url(../images/bg1.jpg);
+	background-size: cover;  /* 设置图片自适应缩放 */
+}
+.container{
+	max-width: 300px;
+	max-height: 500px;
+	border: 1px solid black;  /* 设置边框颜色 */
+	border-radius: 10px;  /* 设置边框圆角 */
+	position: absolute;
+	top: 45%;  /* 设置元素距上，左距离都为50% */
+	left: 50%;
+	transform: translate(-50%, -50%);  /* 设置元素相对自身偏移-50%，第一个参数为水平偏移 */
+	background-color: rgba(238, 238, 238, 0.8);  /* 设置元素背景颜色，alpha取值0~1 */
+	text-align: center;
+}
+p {
+	padding-top: 5px;
+	text-align: center;
+	font-family: Sans-serif;
+	font-size: 26px;
+}
+.message {
+	margin-top: 10px;
+	color: red;
+}
+.user_name {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding:10px 10px;
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+.user_password {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding:10px 10px;  /* 输入的文字距上，左边界的距离 */
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+.submit {
+	width: 80px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.submit:hover {  /* 鼠标悬停时的css */
+	transform: scale(0.96);  /* 缩放 */
+	background-color: rgb(16, 174,194);
+	transition-duration: 0.3s;  /* hover效果的速度 */
+}

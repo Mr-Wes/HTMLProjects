@@ -1,0 +1,23 @@
+<!DOCTYPE HTML5>
+<head>
+	<title>禾嘉订单查询</title>
+	<meta charset="utf-8" />
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'queryorder/css/main.css' %}"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="ocr">
+		<img src="{% static 'queryorder/images/ocr.png' %}" >
+	</div>
+	<div class="container">
+		<input class="query" type="text"/>
+		<button class="new_order">新建订单记录</button>
+	</div>
+	<div>
+		<button class="exit">退<br>出</button>
+	</div>
+</body>

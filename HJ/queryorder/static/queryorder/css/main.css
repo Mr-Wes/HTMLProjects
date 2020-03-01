@@ -1,0 +1,84 @@
+body {
+	background-image: url(../images/bg2.jpg);
+	background-size: cover;
+}
+.ocr {
+	display: block;
+	position: absolute;
+	right: 0;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.ocr:hover {
+	background-color: gray;
+}
+.container {
+	max-width: 400px;
+	height: 200px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.query {
+	display: block;
+	width: 50px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-top: 20px;
+	outline-style: none;
+	border-radius: 22px;
+	padding: 6px 6px;
+	font-size: 26px;
+	background-color: #e3b4b8;
+	background-image: url(../images/search.png);  /* 在input中插入一个图片 */
+	background-repeat: no-repeat;
+	background-position: 8px 8px;
+	background-size: 36px 36px;
+
+}
+.query:focus {  /* 点击输入框时的css */
+	border-color: #66afe9;  /* 设置输入框点击发光效果 */
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.query:hover {
+	width: 300px;
+	background-position: 258px 8px;
+	transition-duration: 0.5s;
+}
+.new_order {
+	width: 180px;
+	height: 40px;
+	margin-top: 120px;
+	border-radius: 10px;
+	background-color: #eea2a4;
+	font-size: 20px;
+}
+.new_order:hover {
+	transform: scale(0.98);
+	background-color: #8076a3;
+	transition-duration: 0.3s;
+}
+.exit {
+	width: 40px;
+	height: 80px;
+	position: absolute;
+	right: 0;
+	bottom: 5%;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border: none;
+	background-color: #f8c387;
+	color: #495c69;
+}
+.exit:hover {
+	transform: scale(0.9);
+	transition-duration: 0.3s;
+}
+.exit:active {  /* 设置按钮点击时的css */
+	background-color: #ee2746;
+	transition-duration: 0.1s;
+}

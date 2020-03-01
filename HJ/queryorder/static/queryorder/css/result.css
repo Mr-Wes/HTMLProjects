@@ -1,0 +1,27 @@
+body {
+}
+.container {
+	width: 100%;
+	height: 100%;
+}
+.row_clearfix {
+	width: 100%;
+	height: 100%;
+}
+.col-md-12_column {
+	width: 100%;
+	height: 100%;
+}
+.col-md-12_column h4{
+	margin-top: 20px;
+}
+.no_found {
+	margin-top: 40px;
+	text-align: center;
+	font-size: 36px;
+	color: red;
+}
+.pagination {
+	position: absolute;
+	bottom: 10px;
+}
